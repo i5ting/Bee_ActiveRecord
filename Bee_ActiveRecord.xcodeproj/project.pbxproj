@@ -21,6 +21,10 @@
 		5D1BE328171CF48E002C0057 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D1BE309171CF48C002C0057 /* Foundation.framework */; };
 		5D1BE330171CF48E002C0057 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5D1BE32E171CF48E002C0057 /* InfoPlist.strings */; };
 		5D1BE333171CF48E002C0057 /* Bee_ActiveRecordTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D1BE332171CF48E002C0057 /* Bee_ActiveRecordTests.m */; };
+		5D1BE354171CF510002C0057 /* gospel_ios.db in Resources */ = {isa = PBXBuildFile; fileRef = 5D1BE34C171CF510002C0057 /* gospel_ios.db */; };
+		5D1BE355171CF510002C0057 /* gospel_ios.db in Resources */ = {isa = PBXBuildFile; fileRef = 5D1BE34C171CF510002C0057 /* gospel_ios.db */; };
+		5D1BE356171CF510002C0057 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 5D1BE34E171CF510002C0057 /* README.md */; };
+		5D1BE357171CF510002C0057 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 5D1BE34E171CF510002C0057 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,8 @@
 		5D1BE32F171CF48E002C0057 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5D1BE331171CF48E002C0057 /* Bee_ActiveRecordTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bee_ActiveRecordTests.h; sourceTree = "<group>"; };
 		5D1BE332171CF48E002C0057 /* Bee_ActiveRecordTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Bee_ActiveRecordTests.m; sourceTree = "<group>"; };
+		5D1BE34C171CF510002C0057 /* gospel_ios.db */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gospel_ios.db; sourceTree = "<group>"; };
+		5D1BE34E171CF510002C0057 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +88,9 @@
 		5D1BE2FB171CF48B002C0057 = {
 			isa = PBXGroup;
 			children = (
+				5D1BE33C171CF510002C0057 /* lib */,
+				5D1BE33D171CF510002C0057 /* src */,
+				5D1BE353171CF510002C0057 /* vendor */,
 				5D1BE30D171CF48C002C0057 /* Bee_ActiveRecord */,
 				5D1BE32B171CF48E002C0057 /* Bee_ActiveRecordTests */,
 				5D1BE306171CF48B002C0057 /* Frameworks */,
@@ -150,6 +159,181 @@
 				5D1BE32E171CF48E002C0057 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5D1BE33C171CF510002C0057 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		5D1BE33D171CF510002C0057 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				5D1BE33E171CF510002C0057 /* app */,
+				5D1BE347171CF510002C0057 /* config */,
+				5D1BE34B171CF510002C0057 /* db */,
+				5D1BE34D171CF510002C0057 /* doc */,
+				5D1BE34F171CF510002C0057 /* log */,
+				5D1BE350171CF510002C0057 /* script */,
+				5D1BE351171CF510002C0057 /* server */,
+				5D1BE352171CF510002C0057 /* test */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		5D1BE33E171CF510002C0057 /* app */ = {
+			isa = PBXGroup;
+			children = (
+				5D1BE33F171CF510002C0057 /* apis */,
+				5D1BE340171CF510002C0057 /* assets */,
+				5D1BE343171CF510002C0057 /* controllers */,
+				5D1BE344171CF510002C0057 /* helpers */,
+				5D1BE345171CF510002C0057 /* models */,
+				5D1BE346171CF510002C0057 /* views */,
+			);
+			path = app;
+			sourceTree = "<group>";
+		};
+		5D1BE33F171CF510002C0057 /* apis */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = apis;
+			sourceTree = "<group>";
+		};
+		5D1BE340171CF510002C0057 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				5D1BE341171CF510002C0057 /* images */,
+				5D1BE342171CF510002C0057 /* xibs */,
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
+		5D1BE341171CF510002C0057 /* images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		5D1BE342171CF510002C0057 /* xibs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = xibs;
+			sourceTree = "<group>";
+		};
+		5D1BE343171CF510002C0057 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		5D1BE344171CF510002C0057 /* helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = helpers;
+			sourceTree = "<group>";
+		};
+		5D1BE345171CF510002C0057 /* models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		5D1BE346171CF510002C0057 /* views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		5D1BE347171CF510002C0057 /* config */ = {
+			isa = PBXGroup;
+			children = (
+				5D1BE348171CF510002C0057 /* environments */,
+				5D1BE349171CF510002C0057 /* initializers */,
+				5D1BE34A171CF510002C0057 /* locales */,
+			);
+			path = config;
+			sourceTree = "<group>";
+		};
+		5D1BE348171CF510002C0057 /* environments */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = environments;
+			sourceTree = "<group>";
+		};
+		5D1BE349171CF510002C0057 /* initializers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = initializers;
+			sourceTree = "<group>";
+		};
+		5D1BE34A171CF510002C0057 /* locales */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = locales;
+			sourceTree = "<group>";
+		};
+		5D1BE34B171CF510002C0057 /* db */ = {
+			isa = PBXGroup;
+			children = (
+				5D1BE34C171CF510002C0057 /* gospel_ios.db */,
+			);
+			path = db;
+			sourceTree = "<group>";
+		};
+		5D1BE34D171CF510002C0057 /* doc */ = {
+			isa = PBXGroup;
+			children = (
+				5D1BE34E171CF510002C0057 /* README.md */,
+			);
+			path = doc;
+			sourceTree = "<group>";
+		};
+		5D1BE34F171CF510002C0057 /* log */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = log;
+			sourceTree = "<group>";
+		};
+		5D1BE350171CF510002C0057 /* script */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = script;
+			sourceTree = "<group>";
+		};
+		5D1BE351171CF510002C0057 /* server */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = server;
+			sourceTree = "<group>";
+		};
+		5D1BE352171CF510002C0057 /* test */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = test;
+			sourceTree = "<group>";
+		};
+		5D1BE353171CF510002C0057 /* vendor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = vendor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,6 +411,8 @@
 				5D1BE31A171CF48C002C0057 /* Default.png in Resources */,
 				5D1BE31C171CF48C002C0057 /* Default@2x.png in Resources */,
 				5D1BE31E171CF48D002C0057 /* Default-568h@2x.png in Resources */,
+				5D1BE354171CF510002C0057 /* gospel_ios.db in Resources */,
+				5D1BE356171CF510002C0057 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,6 +421,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5D1BE330171CF48E002C0057 /* InfoPlist.strings in Resources */,
+				5D1BE355171CF510002C0057 /* gospel_ios.db in Resources */,
+				5D1BE357171CF510002C0057 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
