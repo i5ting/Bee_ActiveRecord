@@ -74,6 +74,8 @@ mkdir -p src/config/locales
 
 sqlite3 src/db/gospel_ios.db ""
 
+
+mkdir lib
 mkdir vendor
 
 touch src/doc/README.md
